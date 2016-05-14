@@ -5,6 +5,9 @@
  */
 package homework;
 
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Scanner;
 
 /**
@@ -19,7 +22,10 @@ public class Main {
     public static void main(String[] args) {
         // TODO code application logic here
         Scanner scan1 = new Scanner(System.in);
-        
+        String input1 = scan1.nextLine();
+
+        Map<String, Integer> m1 = new HashMap<>();
+
     }
-    
+
 }
