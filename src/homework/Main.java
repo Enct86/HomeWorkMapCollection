@@ -5,6 +5,7 @@
  */
 package homework;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
@@ -27,6 +28,11 @@ public class Main {
         Map<String, Integer> m1 = new HashMap<>();
         String[] spitted = input1.split(" ");
 
+        for (String str : spitted) {
+            m1.put(str, 0);
+        }
+
+        System.out.println(m1);
     }
 
 }
