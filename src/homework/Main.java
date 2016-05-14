@@ -5,6 +5,8 @@
  */
 package homework;
 
+import java.util.Scanner;
+
 /**
  *
  * @author Max
@@ -16,6 +18,8 @@ public class Main {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        Scanner scan1 = new Scanner(System.in);
+        
     }
     
 }
