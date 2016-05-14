@@ -25,6 +25,7 @@ public class Main {
         String input1 = scan1.nextLine();
 
         Map<String, Integer> m1 = new HashMap<>();
+        String[] spitted = input1.split(" ");
 
     }
 
