@@ -21,10 +21,21 @@ public class Main {
     public static void main(String[] args) {
         // TODO code application logic here
         Scanner scan1 = new Scanner(System.in);
-        String input1 = scan1.nextLine().toLowerCase().replaceAll("[^a-zа-яA-ZА-Я $]", "");
+        String nextline = null;
+        String inputstring = "";
+        System.out.println("Enter big text. in the end print - end");
+        while ((nextline = scan1.nextLine()) != "end") {
+            if (nextline.equals("end")) {
+                break;
+            } else {
+                inputstring = inputstring + " " + nextline;
+            }
+        }
+        System.out.println(inputstring);
+        String forsplit = inputstring.toLowerCase().replaceAll("[^a-zа-яA-ZА-Я $]", "");
 
         Map<String, Integer> m1 = new HashMap<>();
-        String[] spitted = input1.split(" ");
+        String[] spitted = forsplit.split(" ");
 
         for (String str : spitted) {
             m1.put(str, 0);
@@ -41,6 +52,6 @@ public class Main {
         System.out.println(m1);
         System.out.println("Колиство слов в тексте - " + spitted.length);
         System.out.println("Колиство уникальных слов в тексте - " + m1.size());
-    }
 
+    }
 }
