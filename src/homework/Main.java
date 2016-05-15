@@ -31,7 +31,9 @@ public class Main {
                 inputstring = inputstring + " " + nextline;
             }
         }
-        System.out.println(inputstring);
+
+        inputstring = inputstring.substring(1);
+
         String forsplit = inputstring.toLowerCase().replaceAll("[^a-zà-ÿA-ZÀ-ß $]", "");
 
         Map<String, Integer> m1 = new HashMap<>();
