@@ -5,12 +5,9 @@
  */
 package homework;
 
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
-import java.util.regex.*;
 
 /**
  *
@@ -32,7 +29,7 @@ public class Main {
         for (String str : spitted) {
             m1.put(str, 0);
         }
-        
+
         for (String str : spitted) {
             if (m1.containsKey(str)) {
                 int i = m1.get(str);
