@@ -23,7 +23,7 @@ public class Main {
     public static void main(String[] args) {
         // TODO code application logic here
         Scanner scan1 = new Scanner(System.in);
-        String input1 = scan1.nextLine();
+        String input1 = scan1.nextLine().toLowerCase();
 
         Map<String, Integer> m1 = new HashMap<>();
         String[] spitted = input1.split(" ");
