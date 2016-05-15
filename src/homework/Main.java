@@ -23,7 +23,7 @@ public class Main {
         Scanner scan1 = new Scanner(System.in);
         String nextline = null;
         String inputstring = "";
-        System.out.println("Enter big text. in the end print - end");
+        System.out.println("¬ведите текст, когда закончите введите - end");
         while ((nextline = scan1.nextLine()) != "end") {
             if (nextline.equals("end")) {
                 break;
