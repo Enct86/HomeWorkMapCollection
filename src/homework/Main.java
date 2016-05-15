@@ -42,6 +42,8 @@ public class Main {
         }
 
         System.out.println(m1);
+        System.out.println("Колиство слов в тексте - " + spitted.length);
+        System.out.println("Колиство уникальных слов в тексте - " + m1.size());
     }
 
 }
